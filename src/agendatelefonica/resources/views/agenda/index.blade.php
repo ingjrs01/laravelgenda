@@ -22,6 +22,14 @@
 
 <div class="container-fluid ">
 
+@if ( session('datos'))
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{session('datos')}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>    
+</div>
+@endif
 
  <br>
 <nav class="navbar navbar-light">
@@ -53,7 +61,7 @@
 
       <br>
 <div class="row float-right">
-    <a  class="btn btn-info btncolorblanco"><i class="fas fa-user-plus"></i> Agregar un nuevo Registro</a>
+    <a  href="{{ route('agenda.create')}}" class="btn btn-info btncolorblanco"><i class="fas fa-user-plus"></i> Agregar un nuevo Registro</a>
 </div>
    <br>
 <table class="table-responsive table text-center">

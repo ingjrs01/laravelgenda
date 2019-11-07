@@ -16,7 +16,7 @@ class CreateAgendasTable extends Migration
         Schema::create('agendas', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombres',50);
-            $table->string('apelidos',50);
+            $table->string('apellidos',50);
             $table->string('telefono',20);
             $table->string('celular',20);
             $table->char('sexo',9);
