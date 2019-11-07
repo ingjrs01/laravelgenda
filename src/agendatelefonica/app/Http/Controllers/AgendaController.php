@@ -14,8 +14,8 @@ class AgendaController extends Controller
      */
     public function index()
     {
-        //
-        return view('agenda.index');
+        $agenda = Agenda::all();
+        return view('agenda.index',compact('agenda'));
     }
 
     /**
@@ -95,6 +95,15 @@ class AgendaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $agenda = Agenda::findOrFail($id);
+        $agenda->delete();
+        return redirect()->route('agenda.index')->with('datos','Registro eliminado correctamente');
+    }
+
+    public function confirm($id)
+    {
+        $agenda = Agenda::findOrFail($id);
+
+        return view('agenda.confirm',compact('agenda'));
     }
 }

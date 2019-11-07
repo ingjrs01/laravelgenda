@@ -32,3 +32,5 @@ Route::resource('agenda','AgendaController');
 Route::get('/cancelar',function(){
     return redirect()->route('agenda.index')->with('cancelar','Acción Cancelada');
 })->name('cancelar');
+
+Route::get('/agenda/{id}/confirm','AgendaController@confirm')->name('agenda.confirm');
