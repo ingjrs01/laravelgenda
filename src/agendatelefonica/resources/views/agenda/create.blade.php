@@ -166,7 +166,7 @@
                                     
 
                                     <button type="submit" class="redondo btn btn-info"><i class="fas fa-save"></i> Guardar</button>
-                                    <a href="" class="redondo btn btn-danger"><i class="fas fa-ban"></i> Cancelar</a>
+                                    <a href="{{  route('cancelar')  }}" class="redondo btn btn-danger"><i class="fas fa-ban"></i> Cancelar</a>
                                     </div>
                                 </div>
                             </div>

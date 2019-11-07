@@ -31,7 +31,16 @@
 </div>
 @endif
 
- <br>
+@if ( session('cancelar'))
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    {{session('cancelar')}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>    
+</div>
+@endif
+
+<br>
 <nav class="navbar navbar-light">
   <a class="navbar-brand"><img id="icono" class="img-responsive" 
     src="https://imge.apk.tools/300/d/3/1/com.widesoft.guiatelefonica.png"></a>
