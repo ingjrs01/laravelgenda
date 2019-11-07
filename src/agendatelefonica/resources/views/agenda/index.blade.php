@@ -119,7 +119,7 @@
 
                                               </tbody>
                                             </table>
-
+{{ $agenda }}
 
 </div>
 

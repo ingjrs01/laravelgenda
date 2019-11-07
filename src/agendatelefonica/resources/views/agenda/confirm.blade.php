@@ -15,4 +15,6 @@
         <a href="{{ route ('cancelar') }} " class="redondo btn btn-secondary"><i class="fas fa-ban"></i>Cancelar</a>
     </form>
 </div>
+
+@include('plantilla.footer',['container'=>'container'])
 @endsection
