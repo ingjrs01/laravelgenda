@@ -14,7 +14,7 @@
     <style type="text/css">
 
 td .btn {
-    width: 100%;
+    width: 45%;
 }
 .registerinicio{
     /*background: -webkit-linear-gradient(left, #3931af, #00c6ff);

@@ -105,12 +105,12 @@
                                                   <td>{{ $item->departamento  }}</td>
                                                   <td>{{ $item->salario  }}</td>
                                                   <td>{{ $item->fechadenacimiento  }}</td>
-                                                  <td><a class="btn btn-success btncolorblanco">
-                                                        <i class="fa fa-edit"></i> Editar 
+                                                  <td><a href=" {{ route('agenda.edit',$item->id) }} " class="btn btn-success btncolorblanco">
+                                                        <i class="fa fa-edit"></i>  
                                                       </a>
 
                                                       <a href=" {{ route('agenda.confirm',$item->id) }} " class="btn btn-danger btncolorblanco">
-                                                        <i class="fa fa-trash-alt"></i> Eliminar 
+                                                        <i class="fa fa-trash-alt"></i>  
                                                       </a>
                                                   </td>
                                                   
