@@ -12,7 +12,6 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -62,6 +61,7 @@
                 margin-bottom: 30px;
             }
         </style>
+        @extends('plantilla.plantilla')
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -80,19 +80,25 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <div class="m-b-md">
+                <div class="container-fluid registerinicio">
+                <div class="row">
+                    <div class="col-md-6 register-left register-left1">
+                        <img src="http://www.idaipqroo.org.mx/wp-content/uploads/2018/06/proteccion-de-datos-personales-791x1024.png" alt=""/>
+                    </div>    
+                    <div class="col-md-6 register-left">
+                        
+                        <h3>Bienvenid@</h3>
+                        <p>Por favor llena los datos correctamente en el sistema!</p>
+                        
+                    </div>    
+                </div>
+</div>
+
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    @include('plantilla.footer',['container'=>'container-fluid'])
                 </div>
             </div>
         </div>

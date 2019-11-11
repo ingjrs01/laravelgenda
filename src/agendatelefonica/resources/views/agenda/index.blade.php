@@ -49,7 +49,20 @@
     <li class="breadcrumb-item active"><a href="{{route('agenda.index')}}">Inicio</a></li>
   </ol>
 </nav>
-
+<nav class="navbar navbar-light float-right">
+  <form class="form-inline">
+    <select name="tipo" class="form-control mr-sm-2" id="exampleFormControlSelect1">
+      <option>Buscar por tipo</option>
+      <option>nombres</option>
+      <option>apellidos</option>
+      <option>telefono</option>
+      <option>celular</option>
+      <option>email</option>
+    </select>
+    <input name="buscarpor" class="form-control mr-sm-2" type="search" placeholder="Buscar por nombre" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+  </form>
+</nav>
    <br>
       <h1 class="text-center">Datos personales</h1>
 
