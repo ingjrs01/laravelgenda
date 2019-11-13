@@ -72,51 +72,51 @@
 </div>
    <br>
 <table class="table-responsive table text-center">
-                                              <thead>
-                                                <tr>
-                                                  <th scope="col">#</th>
-                                                  <th scope="col">Nombres y apellidos</th>
-                                                  <th scope="col">Telefono</th>
-                                                  <th scope="col">Celular</th>
-                                                  <th scope="col">Sexo</th>
-                                                  <th scope="col">Email</th>
-                                                  <th scope="col">Posición</th>
-                                                  <th scope="col">Departamento</th>
-                                                  <th scope="col">Salario</th>
-                                                  <th scope="col">Fecha de nacimiento</th>
-                                                  <th scope="col">Acción</th>
-                                              
-                                                </tr>
-                                              </thead>
-                                              <tbody>
-                                                  @foreach($agenda as $item)
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombres y apellidos</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Celular</th>
+      <th scope="col">Sexo</th>
+      <th scope="col">Email</th>
+      <th scope="col">Posición</th>
+      <th scope="col">Departamento</th>
+      <th scope="col">Salario</th>
+      <th scope="col">Fecha de nacimiento</th>
+      <th scope="col">Acción</th>
+
+    </tr>
+  </thead>
+  <tbody>
+      @foreach($agenda as $item)
 
 
-                                                <tr>
-                                                  <th scope="row">{{$item->id}}</th>
-                                                  <td><a href="{{route('agenda.show',$item->id) }}">{{ $item->nombres }} {{ $item->apellidos }}</a></td>
-                                                  <td>{{ $item->telefono  }}</td>
-                                                  <td>{{ $item->celular  }}</td>
-                                                  <td>{{ $item->sexo  }}</td>
-                                                  <td>{{ $item->email  }}</td>
-                                                  <td>{{ $item->posicion  }}</td>
-                                                  <td>{{ $item->departamento  }}</td>
-                                                  <td>{{ $item->salario  }}</td>
-                                                  <td>{{ $item->fechadenacimiento  }}</td>
-                                                  <td><a href=" {{ route('agenda.edit',$item->id) }} " class="btn btn-success btncolorblanco">
-                                                        <i class="fa fa-edit"></i>  
-                                                      </a>
+    <tr>
+      <th scope="row">{{$item->id}}</th>
+      <td><a href="{{route('agenda.show',$item->id) }}">{{ $item->nombres }} {{ $item->apellidos }}</a></td>
+      <td>{{ $item->telefono  }}</td>
+      <td>{{ $item->celular  }}</td>
+      <td>{{ $item->sexo  }}</td>
+      <td>{{ $item->email  }}</td>
+      <td>{{ $item->posicion  }}</td>
+      <td>{{ $item->departamento  }}</td>
+      <td>{{ $item->salario  }}</td>
+      <td>{{ $item->fechadenacimiento  }}</td>
+      <td><a href=" {{ route('agenda.edit',$item->id) }} " class="btn btn-success btncolorblanco">
+            <i class="fa fa-edit"></i>  
+          </a>
 
-                                                      <a href=" {{ route('agenda.confirm',$item->id) }} " class="btn btn-danger btncolorblanco">
-                                                        <i class="fa fa-trash-alt"></i>  
-                                                      </a>
-                                                  </td>
-                                                  
-                                                </tr>
-                                                @endforeach
+          <a href=" {{ route('agenda.confirm',$item->id) }} " class="btn btn-danger btncolorblanco">
+            <i class="fa fa-trash-alt"></i>  
+          </a>
+      </td>
+      
+    </tr>
+    @endforeach
 
-                                              </tbody>
-                                            </table>
+  </tbody>
+</table>
 {{ $agenda }}
 
 </div>
